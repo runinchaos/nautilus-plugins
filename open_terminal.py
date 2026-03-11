@@ -103,8 +103,8 @@ class OpenTerminalExtension(Nautilus.MenuProvider, GObject.GObject):
 
         item = Nautilus.MenuItem(
             name="NautilusPython::openterminal_file_item",
-            label="在终端中打开 (%s)" % self._get_terminal_exec(),
-            tip="在终端中打开 %s" % file.get_name(),
+            label="在Terminator中打开",
+            tip="在Terminator中打开 %s" % file.get_name(),
         )
         item.connect("activate", self.menu_activate_cb, file)
         return (item,)
@@ -114,8 +114,8 @@ class OpenTerminalExtension(Nautilus.MenuProvider, GObject.GObject):
 
         item = Nautilus.MenuItem(
             name="NautilusPython::openterminal_file_item2",
-            label="在终端中打开 (%s)" % self._get_terminal_exec(),
-            tip="在终端中打开 %s" % folder.get_name(),
+            label="在Terminator中打开",
+            tip="在Terminator中打开 %s" % folder.get_name(),
         )
         item.connect("activate", self.menu_background_activate_cb, folder)
         return (item,)
