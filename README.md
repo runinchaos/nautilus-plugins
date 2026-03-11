@@ -34,3 +34,7 @@ nautilus -q
 ### open_opencode.py - 在 opencode 中打开
 
 右键菜单添加"在 opencode 中打开"选项，在 Terminator 终端中启动 opencode 并切换到当前目录。
+
+### create_empty_file.py - 新建空白文档
+
+右键空白处添加"新建空白文档"选项，在当前目录创建空的 txt 文件。
